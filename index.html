@@ -8,16 +8,19 @@
         <!-- STYLE -->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     </head>
-    <body class="body">
-        <header class="header">
-            <p class="header-para">با ما تجربه‌ای خاص از خرید داشته باشید</p>
+    <body>
+        <header class="header" id="header">
+            <p class="header-text">با ما تجربه‌ای خاص از خرید داشته باشید</p>
             <h1 class="header-title">گوشـی موبایل و لوازم جانبی</h1>
-            <a class="header-btn header-consulting-btn" href="">مشاوره می‌خوام</a>
-            <a class="header-btn header-shop-btn" href="">خرید می‌کنم</a>
+            <div class="header-box-btn">
+                <a class="header-btn header-consulting-btn" href="">تماس با ما</a>
+                <a class="header-btn header-shop-btn" href="">محصولات</a>                
+            </div>
         </header>
-        <nav class="nav" id="nav">
-            <a class="nav-link" href="">فروشگاه آرنو</a>
+        <nav class="nav">
+            <a class="nav-link" href=""><img class="brand-img" src="assets/img/areno.png" alt="نام برند"></a>
             <a class="nav-link" href="">گوشی موبایل</a>
             <a class="nav-link" href="">پاوربانک</a>
             <a class="nav-link" href="">ایرپاد</a>
@@ -43,30 +46,38 @@
                     <article class="offer-card">
                         <img class="offer-img" src="assets/img/iphone-17-pro-max.png" alt="تخفیف ویژه">
                         <h3 class="offer-title">گوشی موبایل اپل مدل iPhone 17 pro max</h3>
-                        <span class="offer-badge">5%</span>                   
-                        <span class="currency"><del class="offer-price-old">368,000,000</del> تومان </span>
-                        <span class="currency"><ins class="offer-price-new">349,600,000</ins> تومان </span>
+                        <span class="offer-badge">5%</span>
+                        <div class="offer-price">
+                            <span class="currency"><del class="offer-price-old">368,000,000</del> تومان </span>
+                            <span class="currency"><ins class="offer-price-new">349,600,000</ins> تومان </span>                            
+                        </div> 
                     </article>
                     <article class="offer-card">
                         <img class="offer-img" src="assets/img/headphone.png" alt="تخفیف ویژه">
                         <h3 class="offer-title">هدفون بلوتوثی سونی مدل WH-CH720N</h3>
-                        <span class="offer-badge">20%</span>                    
-                        <span class="currency"><del class="offer-price-old">8,500,000</del> تومان </span>
-                        <span class="currency"><ins class="offer-price-new">6,800,000</ins> تومان </span>
+                        <span class="offer-badge">20%</span>
+                        <div class="offer-price">
+                            <span class="currency"><del class="offer-price-old">8,500,000</del> تومان </span>
+                            <span class="currency"><ins class="offer-price-new">6,800,000</ins> تومان </span>                            
+                        </div>                   
                     </article> 
                     <article class="offer-card">
                         <img class="offer-img" src="assets/img/samsung-a17.png" alt="تخفیف ویژه">
                         <h3 class="offer-title">گوشی موبایل سامسونگ مدل Galexy A17</h3>
-                        <span class="offer-badge">7%</span>     
-                        <span class="currency"><del class="offer-price-old">35,800,000</del> تومان </span>
-                        <span class="currency"><ins class="offer-price-new">33,294,000</ins> تومان </span>
+                        <span class="offer-badge">7%</span>
+                        <div class="offer-price">
+                            <span class="currency"><del class="offer-price-old">35,800,000</del> تومان </span>
+                            <span class="currency"><ins class="offer-price-new">33,294,000</ins> تومان </span>
+                        </div> 
                     </article> 
                     <article class="offer-card">
                         <img class="offer-img" src="assets/img/qcy-t13-anc2.png" alt="تخفیف ویژه">
                         <h3 class="offer-title">ایرپاد بلوتوثی برند کیو سی وای مدل T13 ANC2</h3>
-                        <span class="offer-badge">25%</span> 
-                        <span class="currency"><del class="offer-price-old">2,700,000</del> تومان </span>
-                        <span class="currency"><ins class="offer-price-new">2,025,000</ins> تومان </span>
+                        <span class="offer-badge">25%</span>
+                        <div class="offer-price">
+                            <span class="currency"><del class="offer-price-old">2,700,000</del> تومان </span>
+                            <span class="currency"><ins class="offer-price-new">2,025,000</ins> تومان </span>                            
+                        </div>
                     </article>
                 </div>
             </section>
@@ -386,9 +397,13 @@
             </div>
             <div class="footer-bottom">
                 <p class="footer-copy">© تمامی حقوق برای <strong> فروشگاه آرنو </strong> محفوظ است.</p>
-                <p class="footer-web-developer">اجرای وبسایت: مهندس مهدی سنگری‌زهره</p>
+                <p class="footer-developer">
+                    <i class="fa-regular fa-code"></i> 
+                    توسعه: <a href="https://github.com/msangari021/" target="_blank">مهدی سنگری‌زهره</a>
+                    <i class="fa-regular fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+                </p>
             </div>
-            <a class="page-up" href="#nav">بازگشت به بالا <i class="fa-thin fa-chevron-up"></i></a>
+            <a class="page-up" href="#header">بازگشت به بالا <i class="fa-thin fa-chevron-up"></i></a>
         </footer>
         <a class="support" href=""><i class="fa-solid fa-headset"></i></a>
     </body>
