@@ -281,8 +281,9 @@
     }
     .banners-item{
         flex: 1;
-        width: 150px;
+        width: 100%;
         height: 25rem;
+        padding: var(--spacing-12) var(--spacing-16);
         transition: all 0.6s ease;
     }
     .banners-item:hover{
@@ -290,16 +291,18 @@
     }
     .banners-item *{
         opacity: 0;
+        visibility: hidden;
     }
     .banners-item:hover *{
         opacity: 1;
+        visibility: visible;
     }
     .banner-title{
         font-size: var(--font-size-xl);
-        width: 120px;
+        min-width: 150px;
     }
     .banners-item:nth-child(3) .banner-title{
-        width: 150px;
+        min-width: 200px;
     }
     .banner-btn{
         margin-top: 0;
@@ -419,7 +422,7 @@
         height: 65vh;
     }
     .section-banners:hover{
-        margin: 0 var(--spacing-160);
+        margin: 0 var(--spacing-48);
     }
     .footer-support{
         font-size: var(--font-size-xl);
