@@ -4,14 +4,14 @@
     --color-white: #ffffff;
     --color-white-15: #ffffff26;
     --color-white-30: #ffffff4d;
-    --color-primary: #a52a2a;
-    --color-primary-hover: #8b1a1a;
-    --color-primary-50: #a52a2a80;
-    --color-red: #dc0000;
+    --color-primary:#a52a2a;
+    --color-primary-hover:#8b1a1a;
+    --color-primary-50:#a52a2a80;
+    --color-red:#dc0000;
     --color-gray-400: #e6e6e6;
     --color-gray-500: #808080;
-    --color-gray-700: #464646;
-    --color-gray-800: #323232;
+    --color-gray-700:#464646;
+    --color-gray-800:#323232;
     /* ===== فونت‌ها ===== */
     --font-family-base: 'Vazir' , 'Tahoma' , sans-serif;
     --font-size-xs: clamp(0.5rem,1vw,0.75rem);
@@ -120,7 +120,10 @@ body{
 .nav-link i:last-child {
     transition: var(--transition);
 }
-.nav-link:hover i:last-child {
+.nav-dropdown:hover .nav-link{
+    color: var(--color-primary);
+}
+.nav-dropdown:hover .nav-link i:last-child {
     transform: rotate(180deg);
 }
 .nav-link{
@@ -143,9 +146,7 @@ body{
     visibility: hidden;
     transition: var(--transition);    
 }
-.nav-link:hover{
-    color: var(--color-primary);
-}
+
 .nav-dropdown:hover .categories-dropdown{
     opacity: 1;
     visibility: visible;
@@ -175,9 +176,10 @@ body{
 }
 .search-input{
     flex: 1;
+    height: 2.5rem;
     font-size: var(--font-size-lg);
     color: var(--color-primary);
-    padding: var(--spacing-4);
+    padding: var(--spacing-8);
     border-top-left-radius: var(--radius-lg);
     border-bottom-left-radius: var(--radius-lg);
     border: none;
@@ -191,14 +193,17 @@ body{
 .search-input:focus{
     outline: none;
 }
+.search-input::placeholder{
+    color: var(--color-primary-50);
+}
 .search-btn{
     flex-shrink: 0;
     font-size: var(--font-size-lg);
-    padding: var(--spacing-4) var(--spacing-16);
+    padding: var(--spacing-4) var(--spacing-12);
     background-color: var(--color-primary);
     border: var(--color-primary);
-    border-top-right-radius: var(--radius-lg);
-    border-bottom-right-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
     cursor: pointer;
 }
 .search-btn i{
