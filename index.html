@@ -7,44 +7,108 @@
         <title>آرنو | خرید موبایل و لوازم جانبی</title>
         <!-- STYLE -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     </head>
     <body>
         <header class="header" id="header">
-            <p class="header-text">با ما تجربه‌ای خاص از خرید داشته باشید</p>
-            <h1 class="header-title">گوشـی موبایل و لوازم جانبی</h1>
-            <div class="header-box-btn">
-                <a class="header-btn header-consulting-btn" href="">تماس با ما</a>
-                <a class="header-btn header-shop-btn" href="">محصولات</a>                
+            <a class="header-brand" id="areno-logo" href=""><img class="brand-img" src="assets/img/areno.png" alt="نام برند"></a>
+            <nav class="desktop-nav">
+                <div class="nav-dropdown">
+                    <a href="" class="nav-link nav-categories">
+                        <i class="fa-solid fa-grid-2"></i>
+                        دسته‌بندی محصولات
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="categories-dropdown">
+                        <a class="dropdown-item" href="">گوشی موبایل</a>
+                        <a class="dropdown-item" href="">پاوربانک</a>
+                        <a class="dropdown-item" href="">ایرپاد</a>
+                        <a class="dropdown-item" href="">ساعت هوشمند</a>
+                        <a class="dropdown-item" href="">اسپیکر بلوتوثی</a>
+                        <a class="dropdown-item" href="">هدفون و هندزفری</a>
+                        <a class="dropdown-item" href="">لوازم جانبی</a>                        
+                    </div>
+                </div>
+            </nav>
+            <div class="desktop-search">
+                <form action="" class="search-form">
+                    <button type="submit" class="search-btn" aria-label="جستجو"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    <input type="search" class="search-input" name="Search" placeholder="جستجوی محصولات..." aria-label="جستجو">
+                </form>
+            </div>
+            <div class="mobile-search">
+                <a class="icon-mobile-search" href="" aria-label="جستجو"><i class="fa-regular fa-magnifying-glass"></i></a>                
+            </div>
+            <div class="header-actions">
+                <a class="nav-icon-shopping" href="" aria-label="سبدخرید">
+                    <i class="fa-solid fa-cart-shopping"><span class="cart-badge">2</span></i>
+                </a> 
+                <a class="nav-icon-user" href="" aria-label="حساب کاربری">
+                    <i class="fa-solid fa-user"></i>
+                </a>
             </div>
         </header>
-        <nav class="nav">
-            <a class="nav-link" href=""><img class="brand-img" src="assets/img/areno.png" alt="نام برند"></a>
-            <a class="nav-link" href="">گوشی موبایل</a>
-            <a class="nav-link" href="">پاوربانک</a>
-            <a class="nav-link" href="">ایرپاد</a>
-            <a class="nav-link" href="">ساعت هوشمند</a>
-            <a class="nav-link" href="">اسپیکر بلوتوثی</a>
-            <a class="nav-link" href="">هدفون و هندزفری</a>
-            <a class="nav-link" href="">لوازم جانبی</a>
-            <span class="nav-icon">
-                <a class="nav-icon-user" href=""><i class="fa-regular fa-user"></i></a>
-                <a class="nav-icon-search" href=""><i class="fa-regular fa-magnifying-glass"></i></a>
-                <a class="nav-icon-shopping" href=""><i class="fa-regular fa-cart-shopping"></i></a>            
-            </span>
+        <nav class="nav-mobile">       
+            <a class="nav-item" href=""><i class="fa-solid fa-house"></i>خانه</a>
+            <a class="nav-item" href=""><i class="fa-solid fa-grid-2"></i>دسته بندی</a>
+            <a class="nav-item" href=""><i class="fa-solid fa-cart-shopping"><span class="cart-badge">2</span></i>سبد خرید</a> 
+            <a class="nav-item" href=""><i class="fa-solid fa-user"></i>ورود</a>
         </nav>
         <main class="main">
+            <section class="section-hero">
+                <p class="hero-text">با ما تجربه‌ای خاص از خرید داشته باشید</p>
+                <h1 class="hero-title">گوشـی موبایل و لوازم جانبی</h1>
+                <div class="hero-box-btn">
+                    <a class="hero-btn hero-consulting-btn" href="">تماس با ما</a>
+                    <a class="hero-btn hero-shop-btn" href="">محصولات</a>                
+                </div>                
+            </section>            
+            <section class="section-categories">
+                <div class="section-cta">
+                    <h2 class="section-cta-title"> دسته‌بندی محصولات </h2>  
+                </div>
+                <div class="categories-grid">
+                    <a href="" class="category-item">
+                        <img class="category-img" src="assets/img/categories-1.png" alt="گوشی موبايل">
+                        <span class="category-title">گوشی موبایل</span>
+                    </a>
+                    <a href="" class="category-item">
+                        <img class="category-img" src="assets/img/categories-2.png" alt="هدفون و هندزفری">
+                        <span class="category-title">هدفون و هندزفری</span>
+                    </a>
+                    <a href="" class="category-item">
+                        <img class="category-img" src="assets/img/categories-3.png" alt="ساعت هوشمند">
+                        <span class="category-title">ساعت هوشمند</span>
+                    </a> 
+                    <a href="" class="category-item">
+                        <img class="category-img" src="assets/img/categories-4.png" alt="ایرپاد">
+                        <span class="category-title">ایرپاد</span>
+                    </a>
+                    <a href="" class="category-item">
+                        <img class="category-img" src="assets/img/categories-5.png" alt="پاوربانک">
+                        <span class="category-title">پاوربانک</span>
+                    </a>
+                    <a href="" class="category-item">
+                        <img class="category-img" src="assets/img/categories-6.png" alt="اسپیکر بلوتوثی">
+                        <span class="category-title">اسپیکر بلوتوثی</span>
+                    </a>
+                    <a href="" class="category-item">
+                        <img class="category-img" src="assets/img/categories-7.png" alt="لوازم جانبی">
+                        <span class="category-title">لوازم جانبی</span>
+                    </a>
+                </div>
+            </section>
             <section class="section-offers">
-                <h2 class="section-title">تخفیف‌های ویژه</h2>
+                <div class="section-cta">
+                    <h2 class="section-title">تخفیف‌های ویژه</h2>
+                    <a class="section-cta-btn" href="">مشاهده همه</a>
+                </div>
                 <div class="offers-grid">
-                    <div class="offers-cta" >
-                        <h3 class="offers-cta-title"> با تخفیف خرید کن</h3>
-                        <p class="offers-cta-desc">تجربه لذت‌بخش و شیرین خرید با تخفیف‌های ویژه در فروشگاه آرنو</p>
-                        <a class="offers-cta-btn" href="">مشاهده محصولات بیشتر</a>
-                    </div>
                     <article class="offer-card">
-                        <img class="offer-img" src="assets/img/iphone-17-pro-max.png" alt="تخفیف ویژه">
+                        <img class="offer-img" src="assets/img/iphone-17-pro-max.png" alt="گوشی آیفون 17 پرو مکس">
                         <h3 class="offer-title">گوشی موبایل اپل مدل iPhone 17 pro max</h3>
                         <span class="offer-badge">5%</span>
                         <div class="offer-price">
@@ -53,7 +117,7 @@
                         </div> 
                     </article>
                     <article class="offer-card">
-                        <img class="offer-img" src="assets/img/headphone.png" alt="تخفیف ویژه">
+                        <img class="offer-img" src="assets/img/headphone.png" alt="هدفون بلوتوثی سونی">
                         <h3 class="offer-title">هدفون بلوتوثی سونی مدل WH-CH720N</h3>
                         <span class="offer-badge">20%</span>
                         <div class="offer-price">
@@ -62,7 +126,7 @@
                         </div>                   
                     </article> 
                     <article class="offer-card">
-                        <img class="offer-img" src="assets/img/samsung-a17.png" alt="تخفیف ویژه">
+                        <img class="offer-img" src="assets/img/samsung-a17.png" alt="گوشی سامسونگ a17">
                         <h3 class="offer-title">گوشی موبایل سامسونگ مدل Galexy A17</h3>
                         <span class="offer-badge">7%</span>
                         <div class="offer-price">
@@ -71,7 +135,7 @@
                         </div> 
                     </article> 
                     <article class="offer-card">
-                        <img class="offer-img" src="assets/img/qcy-t13-anc2.png" alt="تخفیف ویژه">
+                        <img class="offer-img" src="assets/img/qcy-t13-anc2.png" alt="ایرپاد بلوتوثی کیوسی‌وای">
                         <h3 class="offer-title">ایرپاد بلوتوثی برند کیو سی وای مدل T13 ANC2</h3>
                         <span class="offer-badge">25%</span>
                         <div class="offer-price">
@@ -82,171 +146,146 @@
                 </div>
             </section>
             <section class="section-services">
-                <h2 class="section-title-services"> خدمات ما </h2>
+                <div class="section-cta">
+                    <h2 class="section-cta-title"> خدمات ما </h2>
+                </div>
                 <div class="services-grid">
                     <div class="services-item service-item1">
                         <h3>پشتیبـانی سایت</h3>
-                        <a class="service-btn" href="">کلیک کنید</a>
+                        <a class="service-link" href=""><i class="fa-solid fa-angle-left"></i></a>
                     </div>
                     <div class="services-item service-item2">
                         <h3>باشگاه مشتریان</h3>
-                        <a class="service-btn" href="">کلیک کنید</a>
+                        <a class="service-link" href=""><i class="fa-solid fa-angle-left"></i></a>
                     </div>
                     <div class="services-item service-item3">
                         <h3>فروش اقسـاطی</h3>
-                        <a class="service-btn" href="">کلیک کنید</a>
+                        <a class="service-link" href=""><i class="fa-solid fa-angle-left"></i></a>
                     </div>
                 </div>
             </section>
-            <section class="section-categories">
-                <h2 class="section-title"> دسته‌بندی محصولات </h2>  
-                <div class="categories-grid">
-                    <a href="" class="category-item">
-                        <img class="category-img" src="assets/img/categories-1.png" alt="">
-                        <span class="category-title">گوشی موبایل</span>
-                    </a>
-                    <a href="" class="category-item">
-                        <img class="category-img" src="assets/img/categories-2.png" alt="">
-                        <span class="category-title">هدفون و هندزفری</span>
-                    </a>
-                    <a href="" class="category-item">
-                        <img class="category-img" src="assets/img/categories-3.png" alt="">
-                        <span class="category-title">ساعت هوشمند</span>
-                    </a> 
-                    <a href="" class="category-item">
-                        <img class="category-img" src="assets/img/categories-4.png" alt="">
-                        <span class="category-title">ایرپاد</span>
-                    </a>
-                    <a href="" class="category-item">
-                        <img class="category-img" src="assets/img/categories-5.png" alt="">
-                        <span class="category-title">پاوربانک</span>
-                    </a>
-                    <a href="" class="category-item">
-                        <img class="category-img" src="assets/img/categories-6.png" alt="">
-                        <span class="category-title">اسپیکر بلوتوثی</span>
-                    </a>
-                    <a href="" class="category-item">
-                        <img class="category-img" src="assets/img/categories-7.png" alt="">
-                        <span class="category-title">لوازم جانبی</span>
-                    </a>
-                </div>
-            </section>
             <section class="section-phones">
-                <h2 class="section-title"> گوشـی موبایل </h2>
+                <div class="section-cta">
+                    <h2 class="section-cta-title"> گوشـی موبایل </h2>
+                    <a class="section-cta-btn" href="">مشاهده همه</a>
+                </div>
                 <div class="phones-grid">
-                    <i class="fa-solid fa-angle-right"></i> 
                     <article class="phone-card">
-                        <img class="phone-img" src="assets/img/iphone-17-pro-max.png" alt="تخفیف ویژه">
+                        <img class="phone-img" src="assets/img/iphone-17-pro-max.png" alt="گوشی آیفون 17 پرو مکس">
                         <h3 class="phone-title">گوشی موبایل اپل مدل iPhone 17 pro max</h3>
                         <span class="currency"><ins class="phone-price">349,600,000</ins> تومان </span>
                     </article>
                     <article class="phone-card">
-                        <img class="phone-img" src="assets/img/samsung-galaxy-s25-ultra.png" alt="تخفیف ویژه">
+                        <img class="phone-img" src="assets/img/samsung-galaxy-s25-ultra.png" alt="گوشی سامسونگ s25 اولترا">
                         <h3 class="phone-title">گوشی موبایل سامسونگ Galexy S25 Ultra</h3>
                         <span class="currency"><ins class="phone-price">335,500,000</ins> تومان </span>
                     </article> 
                     <article class="phone-card">
-                        <img class="phone-img" src="assets/img/xiaomi-17-pro-max.png" alt="تخفیف ویژه">
+                        <img class="phone-img" src="assets/img/xiaomi-17-pro-max.png" alt="گوشی شیاِومی 17 پرو مکس">
                         <h3 class="phone-title">گوشی موبایل شیائومی مدل Xiaomi 17 Pro Max</h3>
                         <span class="currency"><ins class="phone-price">320,000,000</ins> تومان </span>
                     </article> 
                     <article class="phone-card">
-                        <img class="phone-img" src="assets/img/google-pixel-10-pro-xl.png" alt="تخفیف ویژه">
+                        <img class="phone-img" src="assets/img/google-pixel-10-pro-xl.png" alt="گوشی پیکسل 10 پرو">
                         <h3 class="phone-title">گوشی موبایل گوگل مدل Pixel 10 Pro XL</h3>
                         <span class="currency"><ins class="phone-price">326,000,000</ins> تومان </span>
                     </article>
-                    <i class="fa-solid fa-angle-left"></i> 
                 </div>
             </section>
             <section class="section-banners">
-                <article class="banners-item banners-item-large">
-                    <p class="banner-desc">ورزشی ، رسمی ، روزمره</p>
+                <article class="banners-item">
+                    <p class="banner-desc">ورزشی و روزمره</p>
                     <h3 class="banner-title">ساعت هوشمند</h3>
                     <a class="banner-btn" href="">کلیک کنید</a>
                 </article>
-                <article class="banners-item banners-item-small">
+                <article class="banners-item">
                     <p class="banner-desc">آسایش و آرامش</p>
                     <h3 class="banner-title"> خرید انواع گوشـی موبایل </h3>
                     <a class="banner-btn" href="">کلیک کنید</a>
                 </article>
-                <article class="banners-item banners-item-small">
+                <article class="banners-item">
                     <p class="banner-desc">راحتی و زیبایی</p>
                     <h3 class="banner-title">ایرپاد بلوتوثی لنوو مدل Livepods</h3>
                     <a class="banner-btn" href="">کلیک کنید</a>
                 </article>
-                <article class="banners-item banners-item-large">
+                <article class="banners-item">
                     <p class="banner-desc">صدای عالی</p>
                     <h3 class="banner-title">هدفون بی‌سیم مدل P47</h3>
                     <a class="banner-btn" href="">کلیک کنید</a>
                 </article>
             </section>
             <section class="section-other-products">
-                <h2 class="section-title">سایر محصولات</h2>
+                <div class="section-cta">
+                    <h2 class="section-cta-title">سایر محصولات</h2>
+                    <a class="section-cta-btn" href="">مشاهده همه</a>
+                </div>
                 <div class="other-products-grid">
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-1.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-1.png" alt="هندزفری انکر">
                         <h3 class="other-product-title">هندزفری بی سیم انکر مدل Soundcore R50i</h3>
                         <span class="currency"><ins class="other-product-price">1,899,000</ins> تومان </span>
                     </article>
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-2.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-2.png" alt="گوشی آیفون 17">
                         <h3 class="other-product-title">گوشی موبایل اپل مد‌ل iPhone 17 CH/A ظرفیت 256 گیگابایت رم 8 گیگابایت - Not Active رجیستر شده</h3>
                         <span class="currency"><ins class="other-product-price">251,999,000</ins> تومان </span>
                     </article> 
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-3.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-3.png" alt="پاوربانک شیاِومی">
                         <h3 class="other-product-title">پاوربانک شیائومی مدل PB3018ZM ظرفیت 30000 میلی آمپر</h3>
                         <span class="currency"><ins class="other-product-price">3,890,000</ins> تومان </span>
                     </article> 
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-4.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-4.png" alt="هدفون بلوتوثی انکر">
                         <h3 class="other-product-title">هدفون بلوتوثی انکر مدل Soundcore Q11i</h3>
                         <span class="currency"><ins class="other-product-price">4,450,000</ins> تومان </span>
                     </article>   
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-5.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-5.png" alt="ساعت هوشمند شیاِومی">
                         <h3 class="other-product-title">ساعت هوشمند شیائومی مدل Redmi Watch 5 Lite</h3>
                         <span class="currency"><ins class="other-product-price">7,109,000</ins> تومان </span>
                     </article>
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-6.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-6.png" alt="پاوربانک انکر">
                         <h3 class="other-product-title">پاوربانک انکر مدل A1647H11 ظرفیت 20000 میلی آمپر ساعت</h3>
                         <span class="currency"><ins class="other-product-price">5,350,000</ins> تومان </span>
                     </article> 
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-7.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-7.png" alt=" هندزفری اپل">
                         <h3 class="other-product-title">گهندزفری بلوتوثی اپل مدل AirPods Pro 3</h3>
                         <span class="currency"><ins class="other-product-price">36,199,000</ins> تومان </span>
                     </article> 
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-8.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-8.png" alt="گوشی شیاِومی 14 تی">
                         <h3 class="other-product-title">گوشی موبايل شیائومی مدل 14T ظرفیت 512 گیگابایت رم 12 گیگابایت</h3>
                         <span class="currency"><ins class="other-product-price">134,999,000</ins> تومان </span>
                     </article>
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-9.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-9.png" alt="هدفون بی سیم یسید">
                         <h3 class="other-product-title">هدفون بی سیم یسیدو مدل EP14</h3>
                         <span class="currency"><ins class="other-product-price">4,099,000</ins> تومان </span>
                     </article>
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-10.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-10.png" alt="گوشی سامسونگ اس 25 اف ای">
                         <h3 class="other-product-title">گوشی موبايل سامسونگ مدل Galaxy S25 FE ظرفیت 256 گیگابایت رم 8 گیگابایت - ویتنام</h3>
                         <span class="currency"><ins class="other-product-price">120,700,000</ins> تومان </span>
                     </article> 
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-11.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-11.png" alt="ساعت هوشمند سامسونگ">
                         <h3 class="other-product-title">ساعت هوشمند 40 میلی متری سامسونگ مدل Galaxy Watch 8 با بند پلاستیکی</h3>
                         <span class="currency"><ins class="other-product-price">35,850,000</ins> تومان </span>
                     </article> 
                     <article class="other-product-card">
-                        <img class="other-product-img" src="assets/img/product-12.png" alt="تخفیف ویژه">
+                        <img class="other-product-img" src="assets/img/product-12.png" alt="هندزفری سامسونگ">
                         <h3 class="other-product-title">هندزفری بلوتوثی سامسونگ مدل Galaxy Buds 3 FE</h3>
                         <span class="currency"><ins class="other-product-price">12,299,000</ins> تومان </span>
                     </article> 
                 </div>
             </section>
             <section class="section-brands">
-                <h2 class="section-title">برندهای محصولات</h2>
+                <div class="section-cta">
+                    <h2 class="section-cta-title">برندهای محصولات</h2>               
+                </div>
                 <div class="brands-grid">
                     <a class="brand-item" href=""><img class="brand-logo" src="assets/img/brand-1.png" alt="لوگو سامسونگ"></a>
                     <a class="brand-item" href=""><img class="brand-logo" src="assets/img/brand-2.png" alt="لوگو اپل"></a>
@@ -260,15 +299,15 @@
                 </div>
             </section>
             <section class="section-articles">
-                <div class="articles-cta">
-                <h2 class="section-title">مقالات مفید و کاربردی</h2>
-                <a class="articles-cta-btn" href="">مشاهده مقالات بیشتر</a>
+                <div class="section-cta">
+                    <h2 class="section-cta-title">مقالات مفید و کاربردی</h2>
+                    <a class="section-cta-btn" href="">مشاهده همه</a>
                 </div>
                 <div class="articles-grid">
                     <a class="article-card" href="">
                         <img class="article-img" src="assets/img/article-headset.png" alt="مقاله راهنمای خرید هدست">
                         <p class="article-subject">هدست</p>
-                        <h3 class="article-title">بهترین هدست های گیمینگ (۱۲ مدل) + نکات خرید</h3>
+                        <h3 class="article-title">راهنمای خرید هدست گیمینگ (از برندهای ریزر ، ایسوس و...)</h3>
                         <span class="article-link">- برای مشاهده کلیک کنید -</span>                   
                     </a>
                     <a class="article-card" href="">
@@ -293,6 +332,7 @@
             </section>
         </main>
         <footer class="footer">
+            <a class="page-up" href="#areno-logo">بازگشت به بالا <i class="fa-thin fa-chevron-up"></i></a>
             <div class="footer-support">
                 <span class="footer-support-phone">
                     تلفن پشتیبانی:
@@ -327,18 +367,26 @@
             </div>
             <div class="footer-main">   
                 <div class="footer-services">
-                    <h4 class="footer-title">خدمات مشتریان</h4>
-                    <ul class="footer-list">
+                    <input class="footer-toggle" id="footer-col1" type="checkbox">
+                    <label for="footer-col1" class="footer-title">
+                        خدمات مشتریان
+                        <i class="fa-solid fa-chevron-down cols-icon"></i>
+                    </label>
+                    <ul class="footer-list list-services">
                         <li><a class="footer-link" href="">سوالات متداول</a></li>
                         <li><a class="footer-link" href="">بازگشت کالا</a></li>
                         <li><a class="footer-link" href="">پیگیری سفارش</a></li>
                         <li><a class="footer-link" href="">گارانتی و ضمانت</a></li>
                         <li><a class="footer-link" href="">حریم خصوصی</a></li>
                     </ul>                        
-                </div>             
+                </div>
                 <div class="footer-quick-links">
-                    <h4 class="footer-title">دسترسی آسان</h4>
-                    <ul class="footer-list">
+                    <input class="footer-toggle" id="footer-col2" type="checkbox">
+                    <label for="footer-col2" class="footer-title">
+                        دسترسی آسان
+                        <i class="fa-solid fa-chevron-down cols-icon"></i>
+                    </label>
+                    <ul class="footer-list list-quick-links">
                         <li><a class="footer-link" href="">محصولات</a></li>
                         <li><a class="footer-link" href="">مقالات</a></li>
                         <li><a class="footer-link" href="">تخفیف‌ها</a></li>
@@ -347,8 +395,12 @@
                     </ul>
                 </div>
                 <div class="footer-help">
-                    <h4 class="footer-title">راهنمای سایت</h4>
-                    <ul class="footer-list">
+                    <input class="footer-toggle" id="footer-col3" type="checkbox">
+                    <label for="footer-col3" class="footer-title">
+                        راهنمای سایت
+                        <i class="fa-solid fa-chevron-down cols-icon"></i>
+                    </label>
+                    <ul class="footer-list list-help">
                         <li><a class="footer-link" href="">نحوه ثبت سفارش</a></li>
                         <li><a class="footer-link" href="">رویه ارسال سفارش</a></li>
                         <li><a class="footer-link" href="">شیوه‌های پرداخت</a></li>
@@ -372,7 +424,7 @@
                         <address class="contact-info">
                             <p class="contact-address">
                                 <i class="fa-solid fa-location-dot"></i>
-                                همدان  -  میدان امام خمینی  -  خیابان بوعلی سینا - جنب سینما قدس - فروشگاه آرنو
+                                همدان - میدان امام خمینی - خیابان بوعلی سینا - جنب سینما قدس - فروشگاه آرنو
                             </p>
                             <p class="contact-email">
                                 <i class="fa-solid fa-envelope"></i>
@@ -387,12 +439,12 @@
                             <button class="newslatter-btn" type="submit">ثبت</button>                                
                         </form>
                     </div>
-                </div>
-                <div class="footer-trust">
-                    <a class="trust-item" href=""><img class="trust-icon" src="assets/img/trust-1.png" alt=""></a>
-                    <a class="trust-item" href=""><img class="trust-icon" src="assets/img/trust-2.png" alt=""></a>
-                    <a class="trust-item" href=""><img class="trust-icon" src="assets/img/trust-3.png" alt=""></a>
-                    <a class="trust-item" href=""><img class="trust-icon" src="assets/img/trust-4.png" alt=""></a>
+                    <div class="footer-trust">
+                        <a class="trust-item" href=""><img class="trust-icon" src="assets/img/trust-1.png" alt=""></a>
+                        <a class="trust-item" href=""><img class="trust-icon" src="assets/img/trust-2.png" alt=""></a>
+                        <a class="trust-item" href=""><img class="trust-icon" src="assets/img/trust-3.png" alt=""></a>
+                        <a class="trust-item" href=""><img class="trust-icon" src="assets/img/trust-4.png" alt=""></a>
+                    </div>                    
                 </div>
             </div>
             <div class="footer-bottom">
@@ -403,7 +455,6 @@
                     <i class="fa-regular fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
                 </p>
             </div>
-            <a class="page-up" href="#header">بازگشت به بالا <i class="fa-thin fa-chevron-up"></i></a>
         </footer>
         <a class="support" href=""><i class="fa-solid fa-headset"></i></a>
     </body>

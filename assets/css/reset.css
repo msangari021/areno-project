@@ -1,0 +1,171 @@
+/* ================ CSS Reset ================= */
+
+/* ===== ۱. حذف همه حاشیه‌ها و فاصله‌ها ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== ۲. تنظیمات ریشه ===== */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 16px;
+}
+
+/* ===== ۳. تنظیمات بدنه ===== */
+body {
+  min-height: 100vh;
+  min-height: 100dvh;   /* برای مرورگرهای مدرن */
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e6e6e6;
+  color: #1a1a1a;
+}
+
+/* ===== ۴. حذف استایل لیست‌ها ===== */
+ul,
+ol {
+  list-style: none;
+}
+
+/* ===== ۵. حذف استایل لینک‌ها ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:focus-visible {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}
+
+/* ===== ۶. تنظیمات تصاویر و ویدیوها ===== */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== ۷. تنظیمات فرم‌ها ===== */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  background: transparent;
+}
+
+/* ===== ۸. تنظیمات جدول ===== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* ===== ۹. تنظیمات نقل قول ===== */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
+
+/* ===== ۱۰. حذف style پیش‌فرض برای fieldset ===== */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/* ===== ۱۱. تنظیمات heading ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* ===== ۱۲. تنظیمات پیش‌فرض برای dialog ===== */
+dialog {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+/* ===== ۱۳. دسترسی‌پذیری (SR Only) ===== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
+/* ===== ۱۴. کاهش حرکت برای کاربران ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== ۱۵. پشتیبانی از تم تاریک (اختیاری) ===== */
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+    color: #f0f0f0;
+  }
+} */

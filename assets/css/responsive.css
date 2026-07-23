@@ -1,0 +1,436 @@
+
+/* X-Small devices (portrait phones, less than 576px) 0 - 400 */
+@media (max-width: 400px) { 
+    html{
+        font-size: 14px;
+    }
+    .nav-mobile{
+        gap: var(--spacing-8);
+    }
+    .nav-item{
+        font-size: var(--font-size-base);
+    }
+    .hero-title{
+        font-size: var(--font-size-2xl);
+    }
+    .hero-text{
+        font-size: var(--font-size-md);
+    } 
+    .hero-btn{
+        font-size: var(--font-size-lg);
+        padding: var(--spacing-8) var(--spacing-32);
+    }
+    .banners-item:nth-child(3) .banner-title{
+        width: 80px;
+    }
+    .services-item{
+        padding: var(--spacing-16);
+        font-size: var(--font-size-xl);
+    }
+    .other-products-grid{
+        grid-template-columns: repeat(auto-fit , minmax(150px, 1fr));
+        gap: var(--spacing-8);
+    }
+    .article-subject{
+        top: 8.25rem;
+    }
+    .footer-support-phone{
+        font-size: 0.65rem;
+    }
+    .features-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+    .feature-item{
+        flex: 0 0 70px;
+        margin: 0 var(--spacing-20);
+    }
+    .footer-connect{
+        width: 260px;
+    }
+    .contact-address{
+        font-size: var(--font-size-md); 
+    }
+}
+/* X-Small devices (portrait phones, less than 576px) 401 - 575 */
+@media (min-width: 400.98px) { 
+    html{
+        font-size: 15px;
+    }
+    :is(.offer-card , .phone-card , .other-product-card , .article-card){
+        flex: 0 0 180px;
+    }
+    .article-subject{
+        top: 8.8rem;
+    }
+    .footer-support-phone{
+        font-size: var(--font-size-base);
+    }
+    .features-list{
+        flex-wrap: nowrap;
+        gap: var(--spacing-16);
+    }
+    .feature-item{
+        flex: 0 0 60px;
+        margin: 0;
+        font-size: var(--font-size-sm); 
+    }
+    .trust-icon{
+        max-width: 4rem;
+    }
+    .support{
+        bottom: 6.5rem;
+    }
+}
+/* X-Small devices (portrait phones, less than 576px) 576 - 767 */
+@media (min-width: 575.98px) { 
+    html{
+        font-size: 16px;
+    }
+    .section-hero{
+        height: 300px;
+    }
+    .hero-title{
+        font-size: var(--font-size-3xl);
+    }
+    .hero-text{
+        font-size: var(--font-size-xl);
+    }
+    .hero-box-btn{
+        flex-direction: row;
+    }
+    .hero-btn{
+        padding: var(--spacing-8) var(--spacing-64);
+        display: flex;
+        align-items: center;
+    }
+    .category-item{
+        flex: 0 0 130px;
+    }
+    .brands-grid{
+        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    }
+    .article-subject{
+        top: 8.15rem;
+    }
+    .footer-support{
+        top: -2rem;
+    }
+    .footer-support-phone{
+        font-size: var(--font-size-xl);
+    }
+    .features-list{
+        flex-wrap: nowrap;
+        gap: var(--spacing-32);
+    }
+    .feature-item{
+        flex: 0 0 80px;
+        font-size: var(--font-size-base); 
+    }
+    .feature-img{
+        max-width: 4rem;
+    }
+    .footer-connect{
+        width: 370px;
+    }
+    .contact-address{
+        font-size: var(--font-size-lg);
+    }
+    .trust-icon{
+        max-width: 5rem;
+    }
+    .page-up{
+        top: -4.25rem;
+    }
+}
+/* Small devices (landscape phones, less than 768px) 768 - 991 */
+@media (min-width: 767.98px) {
+    .nav-item{
+        font-size: var(--font-size-lg);
+    }
+    .nav-item i{
+        font-size: var(--font-size-2xl);
+    }
+    .section-hero{
+        min-height: 400px;
+    }
+    .category-item{
+        flex: 0 0 140px;
+    }
+    .category-title{
+        font-size: var(--font-size-lg);
+    }
+    :is(.offer-card , .phone-card){
+        flex: 0 0 200px;
+    }
+    .article-card{
+        flex: 0 0 240px;
+    }
+    :is(.offer-title , .phone-title , .other-product-title){
+        font-size: var(--font-size-lg);
+    }
+    .services-grid{ 
+        flex-direction: row;
+        gap: var(--spacing-16);
+    }
+    .services-item{
+        flex: 1;
+        height: 8rem;
+        padding: var(--spacing-4);
+        padding-left: 0;
+        font-size: var(--font-size-md);
+    }
+    .service-link{
+        padding: 0;
+        font-size: var(--font-size-lg);
+    }
+    .section-banners{
+        padding: var(--spacing-16);
+        grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    }
+    .other-products-grid{
+        grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
+    }
+    .article-subject{
+        top: 11.2rem;
+    }
+    .footer-support{
+        top: -2.25rem;
+    }
+    .footer-support-phone{
+        font-size: var(--font-size-2xl);
+    }
+    .features-list{
+        gap: var(--spacing-40);
+        padding: var(--spacing-8) 0;
+    }
+    .feature-item{
+        flex: 0 0 109px;
+        font-size: var(--font-size-lg); 
+    }
+    .feature-img{
+        max-width: 5rem;
+    }
+    .footer-link{
+        font-size: var(--font-size-2xl);
+    }
+    .contact-info{
+        max-width: clamp(310px, 38vw, 350px);
+    }
+    .page-up{
+        top: -4.5rem;
+    }
+    .support{
+        bottom: var(--spacing-128);
+    }
+}
+/* Medium devices (tablets, less than 992px) 992 - 1199 */
+@media (min-width: 991.98px) {
+    .section-hero{
+        min-height: 500px;
+    }
+    .nav-dropdown,.desktop-search,.header-actions{
+        display: flex;
+    }
+    .mobile-search,.nav-mobile{
+        display: none;
+    }
+    .brand-img{
+        max-width: 10rem;
+    }
+    .hero-shop-btn:hover{
+        background-color: var(--color-primary-hover);
+    }
+    .hero-consulting-btn:hover{
+        background-color: var(--color-white-30);
+    }
+    .category-item{
+        flex: 0 0 160px;
+    }
+    .category-title{
+        font-size: var(--font-size-xl);
+    }
+    .offer-card:hover{
+        outline: var(--border-black);
+    }
+    :is(.offer-card , .phone-card){
+        flex: 0 0 220px;
+    }
+    .article-card{
+        flex: 0 0 270px;
+    }
+    :is(.offer-card , .phone-card , .other-product-card , .article-card , .brand-logo):hover{
+        outline: var(--border);
+    }
+    :is(.section-cta-btn , .service-btn):hover{
+        color: var(--color-white);
+    }
+    .services-item{
+        height: 10rem;
+    }
+    .section-banners{
+        display: flex;
+        justify-content: center;
+        margin: 0 var(--spacing-160);
+        padding: 0;
+        transition: all 0.6s ease;
+    }
+    .section-banners:hover{
+        margin: 0 var(--spacing-32);
+    }
+    .banners-item{
+        flex: 1;
+        width: 150px;
+        height: 25rem;
+        transition: all 0.6s ease;
+    }
+    .banners-item:hover{
+        flex: 5;
+    }
+    .banners-item *{
+        opacity: 0;
+    }
+    .banners-item:hover *{
+        opacity: 1;
+    }
+    .banner-title{
+        font-size: var(--font-size-xl);
+        width: 120px;
+    }
+    .banners-item:nth-child(3) .banner-title{
+        width: 150px;
+    }
+    .banner-btn{
+        margin-top: 0;
+    }
+    .banner-btn:hover{
+        background-color: var(--color-primary-hover);
+        color: var(--color-white);
+    }
+    .other-products-grid{
+        grid-template-columns: repeat(auto-fit , minmax(230px, 1fr));
+    }
+    .brands-grid{
+        gap: var(--spacing-4);
+    }
+    .article-subject{
+        top: 12.5rem;
+    }
+    .footer-support{
+        font-size: var(--font-size-lg);
+        flex-direction: row;
+    }
+    .footer-support-phone{
+        font-size: var(--font-size-lg);
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+    .footer-support-text{
+        color: var(--color-black);
+        background-color: var(--color-white);
+        border-radius: var(--radius-md) 0 0 var(--radius-md);
+        display: block;
+    }
+    .features-list{
+        gap: var(--spacing-64);
+    }
+    .feature-item{
+        flex: 0 0 120px;
+        font-size: var(--font-size-lg); 
+    }
+    .footer-main{
+        padding-bottom: var(--spacing-32);
+    }
+    .footer-link:hover{
+        color: var(--color-primary);
+    }
+    .footer-connect{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35%,1fr));
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: 
+        "social newslatter"
+        "contact trust" ;
+        align-items: start;
+        justify-items: center;
+        align-items: start;
+        gap: var(--spacing-48);
+        min-width: 100%;
+    }
+    .footer-connect>*{
+        min-width: 380px;
+    }
+    .footer-connect .footer-title{
+        font-size: var(--font-size-xl);
+    }
+    .footer-social{
+        grid-area: social;
+        justify-content: center;
+    }
+    .footer-contact{
+        grid-area: contact;
+    }
+    .footer-newslatter{
+        grid-area: newslatter;
+    }
+    .footer-trust{
+        grid-area: trust;
+        justify-content: space-between;
+    }
+    .social-links{
+        justify-content: center;
+        gap: var(--spacing-8);
+    }
+    .social-link:hover{
+        color: var(--color-white);
+        background-color: var(--color-primary);
+    }
+    .newslatter-btn:hover{
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+    .footer-bottom{
+        display: flex;
+    }
+    .footer-developer{
+        position: absolute;
+        left: var(--spacing-32);
+        font-size: var(--font-size-sm);
+    }
+    .footer-developer a{
+        color: var(--color-red);
+        text-shadow: var(--shadow-text-light);
+        font-weight: 800;
+        text-underline-offset: var(--spacing-4);
+    }
+    .footer-developer a:hover{
+        color: var(--color-gray-400);
+    }
+    .support{
+        bottom: var(--spacing-16);
+    }
+    .page-up{
+        top: -4.75rem;
+    }
+}
+/* Large devices (desktops, less than 1200px) 1200 - 1399 */
+@media (min-width: 1199.98px) {
+    .section-hero{
+        height: 65vh;
+    }
+    .section-banners:hover{
+        margin: 0 var(--spacing-160);
+    }
+    .footer-support{
+        font-size: var(--font-size-xl);
+    }
+    .footer-support-phone{
+        font-size: var(--font-size-xl);
+    }
+}
+/* X-Large devices (large desktops, less than 1400px) 1399 - +++ */
+@media (min-width: 1399.98px) {
+    .section-hero{
+        height: 75vh;
+    }
+}
